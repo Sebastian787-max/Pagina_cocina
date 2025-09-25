@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  font-weight: 300;
+  margin: 0;
+/* deja espacio para que el contenido no quede debajo del header */
+}
+
+main {
+  max-width: 900px; /* contenido centrado */
+  margin: 0 auto;
+}
+
+header {
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 160px;
+  z-index: 1000;
+  background-color: rgba(235, 180, 78, 0.883);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav {
+  max-width: 800px; /* limita el nav al mismo ancho que el contenido */
+  margin: 0 auto;
+  height: 100%; /* se adapta a la altura del header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+.logo{
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    transition: 0.4s;
+    padding: 11px 5px;
+}
+
+nav ul li:hover {
+    background-color: #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+}
+
+a:visited {
+    color: #140b0b;
+}
+
+a:active {
+    color: #e26f0e;
+
+  }
+
+  /* Esto especifica el titulo de la pagina y el tipo de letra */
+h1 {
+  text-align: center;       /* centra el texto */
+  font-family: 'Georgia', serif; /* tipografía más elegante */
+  font-size: 2.5rem;        /* tamaño grande y vistoso */
+  font-weight: bold;        /* lo hace más fuerte */
+  margin: 30px 0;           /* espacio arriba y abajo */
+  color: #333;              /* color oscuro, fácil de leer */
+}
+/* Esta parte es la imagen principal que aparece en la pagina  */
+.banner {
+    max-width: 50%;
+    display: block;
+    float: right;
+}
+
+
+.banner2{
+width: 100%;          /* ocupa todo el ancho */
+  height: 420px;        /* ajusta la altura a tu gusto (puedes poner 250px, 400px, etc.) */
+  object-fit: cover;    /* recorta la imagen pero sin deformarla */
+  object-position: center; /* centra la parte visible de la imagen */
+  display: block;
+  border-radius: 8px;   /* opcional: bordes redondeados */
+}
+
+.featured {
+    background-color: rgba(240, 193, 107, 0.616);
+    padding: 20px;
+}
+
+.fp-video {
+    width: 55%;
+    padding: 2em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ft-articulo {
+    width: 35%;
+    padding: 1%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.boton-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.boton-container a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.boton {
+    padding: 12px 20px;
+    background-color: #ea6e39;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #1fbea4;
+}
+
+
+
+.art-image img,
+.art-img img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+footer {
+  background-color: rgba(235, 180, 75, 0.883);
+  color: #000;
+  padding: 60px 40px; /* Aumentado de 40px 20px a 60px 40px */
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; /* espacio entre columnas */
+  align-items: flex-start;       /* alineación superior */
+  flex-wrap: wrap;               /* si es pantalla pequeña, se acomoda */
+  max-width: 1400px; /* Aumentado de 1200px a 1400px */
+  margin: 0 auto;
+  text-align: left;
+  gap: 30px; /* Aumentado de 20px a 30px */
+}
+
+.footer-col {
+  flex: 1 1 280px; /* Aumentado el ancho mínimo de 250px a 280px */
+  padding: 20px 0; /* Agregado padding vertical para más espacio */
+}
+
+.footer-col p,
+.footer-col address {
+  margin: 8px 0; /* Aumentado de 5px a 8px */
+  font-size: 16px; /* Agregado tamaño de fuente más grande */
+  line-height: 1.6; /* Agregado espaciado entre líneas */
+}
+
+.footer-col a {
+  display: inline-block;
+  margin: 5px 0; /* Aumentado de 3px a 5px */
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 16px; /* Agregado tamaño de fuente */
+  padding: 5px 0; /* Agregado padding para área de clic más grande */
+}
+
+.footer-col a:hover {
+  color: #fff; /* cambia al pasar el mouse */
+}
+
+.footer-center a {
+  margin: 0 12px; /* Aumentado de 8px a 12px */
+}
+
+.footer-icon {
+  width: 40px;   /* Aumentado de 30px a 40px */
+  height: 40px;  /* Aumentado de 30px a 40px */
+  transition: transform 0.3s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2); /* efecto al pasar el mouse */
+}
+
+/* Agregado: Espaciado adicional para títulos si los tienes */
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* Responsive: En pantallas pequeñas se apilan verticalmente */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    flex-direction: column;       /* apila verticalmente en móvil */
+    gap: 20px;
+  }
+  
+  .footer-col,
+  .footer-center {
+    padding: 15px 0;
+    min-height: auto;
+  }
+}
+
+.tarjetas-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* se acomodan en móvil */
+  margin: 30px 0;
+}
+
+.tarjeta {
+  background: #fff3c4;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 900px;       /* más ancho para acomodar lado a lado */
+  text-align: left;       /* texto alineado a la izquierda */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  
+  display: flex;          /* activa flexbox */
+  justify-content: space-between; /* separa imagen y texto */
+  align-items: center;    /* centra verticalmente */
+  gap: 20px;              /* espacio entre imagen y texto */
+}
+
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.tarjeta h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+
+.tarjeta p {
+  font-size: 14px;
+  color: #333;
+}
+
+.ingredientes {
+  list-style-type: disc;   /* usa viñetas (puedes poner circle, square, none) */
+  padding-left: 20px;      /* deja espacio a la izquierda */
+  text-align: left;        /* que el texto quede alineado a la izquierda */
+  font-size: 16px;         /* tamaño de letra más grande */
+  line-height: 1.8;        /* espacio entre líneas */
+  color: #222;             /* color oscuro, buena legibilidad */
+}
+
+.ingredientes li {
+  margin-bottom: 8px;      /* separa cada ingrediente */
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de</title>
+</head>
+<!-- Este es la pagina principal del formulario -->
+
+<body>
+    <h1>Gestion de clientes</h1>
+    <form action="#" method="post">
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juanito perez" required minlength="5"
+            maxlength="50" autocomplete="given-name"><br /><br />
+
+        <label for="Apellido">Apellido: </label>
+        <input type="text" id="Apellido" name="Apellido" placeholder="Ej. Garavito gusman" required minlength="3"
+            maxlength="30" autocomplete="given-name"><br /><br />
+
+        <label for="Correo">Corereo: </label>
+        <input type="email" id="Correo" name="Correo" placeholder="Ej. Juanito@.gmail" required minlength="3"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.,;:_-])[A-Za-z\d@$!%*?&.,;:_-]{8,}$" required
+            maxlength="30" autocomplete="given-name"><br /><br />
+
+      
+            <label>Contraseña:</label>
+            <input type="password" name="clave"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.,;:_-])[A-Za-z\d@$!%*?&.,;:_-]{8,}$" required
+                title="Debe tener al menos 8 caracteres, incluyendo mayúsculas, minúsculas, números y un carácter especial">
+            <br><br>
+        <!-- Esta parte es de la opcion de poner si es genero masculino y la opcion preterminada -->
+        <fieldset>
+            <legend>Genero:</legend>
+            <input type="radio" id="Genero_Masculino" name="Genero" value="Masculino" required>
+            <label for="Genero_Masculino">Masculino</label><br>
+            <label for="genero_masculino"></label>
+
+            <input type="radio" id="Genero_Femenino" name="Genero" checked value="Femenino" required>
+            <label for="Genero_Femenino">Femenino</label><br>
+            <label for="Genero_Femenino"></label>
+        </fieldset><br><br />
+
+        <label for="fecha">Seleccione una fecha de Nacimiento: </label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+  
+            <label>Teléfono:</label>
+            <input type="text" name="telefono" pattern="[0-9]{7,10}" required
+                title="El teléfono debe tener entre 7 y 10 dígitos numéricos">
+            <br><br>
+   
+        <label for="Direccion">Direccion: </label>
+        <input type="Text" id="Direccion" name="Direccion" placeholder="Ej. Carrera o calle 1234" required
+            minlength="10" maxlength="100" autocomplete="sreet-"><br /><br />
+        <!-- seleccion de regimen  -->
+        <h2>Selecciona un regimen</h2>
+        <label for="Opciones">Regimen</label>
+        <select name="Opciones" name="regimen" required>
+            <option value="disable selected"> Seleccione una opcion </option>
+            <option value="simplificado">Regimen simplificado</option>
+            <option value="comun">Regimen comun</option>
+            <option value="Gran_contribuyente">Gran_contribuyente</option>
+            <option value="auto_rerenedor"> Autorrentedor</option>
+        </select>
+        <fieldset>
+            <legend>Intereses</legend>
+            <input type="checkbox" id="interes Tecnologia " name="interes" value="Tecnologia">
+
+            <label for="Interes_tecnologia">Tecnologia</label>
+            <input type="checkbox" id="interes viaje " name="interes" value="viaje">
+
+            <label for="interes_viajes">viajes</label>
+            <input type="checkbox" id="interes_deporte " name="interes" value="deporte">
+
+
+        </fieldset>
+
+        <label for="Comentarios">Comentarios</label><br>
+        <textarea name="comentarios" id="comentarios" rows="6" cols="50"
+            placeholder="Escriba sus comentarios aqui"></textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+<table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Nombres</th>
+        <th>email</th>
+        <th>telefono</th>
+        <th>Regimen</th>
+        <tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Juanito Perez</td>
+            <td>Juanito@gmail.com</td>
+            <td>319 533 8886</td>
+            <td>Regimen ni idea</td>
+    </tbody>
+</table>
+</body>
+
+</html>
